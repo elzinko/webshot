@@ -1,6 +1,6 @@
 {
   "name": "webshot",
-  "description": "A simple web screenshot app",
+  "description": "A simple web screenshot App.",
   "private": true,
   "version": "1.0.0",
   "author": "Thomas Couderc <thomas.couderc@gmail.com>",
@@ -10,11 +10,14 @@
     "puppeteer": "^21.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "cypress": "^13.2.0"
   },
   "scripts": {
     "clean": "rm -rf node_modules && npm install",
     "start": "node index",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "cypress:open": "cypress open",
+    "cy:run": "cypress run"
   }
 }
