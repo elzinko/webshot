@@ -45,3 +45,7 @@ You can launch some simple e2e tests :
 
 - start the application
 - run tests : ```npm run cy:run```
+
+## Quality
+
+[![WebShot CI/CD](https://github.com/elzinko/webshot/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/elzinko/webshot/actions/workflows/main.yml)
