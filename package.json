@@ -11,13 +11,16 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
-    "cypress": "^13.2.0"
+    "cypress": "^13.2.0",
+    "prettier": "^2.3.2"
   },
   "scripts": {
     "clean": "rm -rf node_modules && npm install",
     "start": "node index",
     "dev": "nodemon",
     "cypress:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run --env host=localhost:3000",
+    "cy:run:vercel": "cypress run --env host=webshot-sigma.vercel.app",
+    "format": "prettier --write \"**/*.js\""
   }
 }
