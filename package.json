@@ -7,7 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "puppeteer": "^21.2.1"
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^21.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
@@ -18,9 +19,11 @@
     "clean": "rm -rf node_modules && npm install",
     "start": "node index",
     "dev": "nodemon",
+    "build": "echo \"no build needed\"",
     "cypress:open": "cypress open",
     "cy:run": "cypress run --env host=localhost:3000",
     "cy:run:vercel": "cypress run --env host=webshot-sigma.vercel.app",
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\"",
+    "vercel-build": "echo \"no build needed\""
   }
 }
