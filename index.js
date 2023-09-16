@@ -1,7 +1,3 @@
-#!/usr/bin/env node
-
-'use strict';
-
 const express = require('express');
 
 const { getScreenshot } = require('./lib/webshot');
