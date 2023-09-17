@@ -2,6 +2,10 @@ const express = require('express');
 
 const { getScreenshot } = require('./lib/webshot');
 
+
+let dotenv = require('dotenv').config()
+console.log(dotenv);
+
 const port = process.env.PORT_WEBSHOT || 3000;
 
 const app = express();
