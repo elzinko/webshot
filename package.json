@@ -22,8 +22,8 @@
     "dev": "nodemon",
     "build": "echo \"no build needed\"",
     "cypress:open": "cypress open",
-    "cy:run": "cypress run --env host=localhost:3000",
-    "cy:run:vercel": "cypress run --env host=webshot-sigma.vercel.app",
+    "e2e:run": "cypress run --env host=localhost:3000",
+    "e2e:run:vercel": "cypress run --env host=webshot-sigma.vercel.app,port=80",
     "format": "prettier --write \"**/*.js\"",
     "vercel-build": "echo \"no build needed\""
   }
