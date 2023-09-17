@@ -35,9 +35,9 @@ docker run -it webshot
 
 The application avalaible through `/api/` path.
 
-- get [github.com desktop screenshot](http://localhost:3000/github.com)
+- get [github.com desktop screenshot](http://localhost:3000/api/github.com)
 
-- get [github.com mobile screenshot](http://localhost:3000/github.com?device=mobile)
+- get [github.com mobile screenshot](http://localhost:3000/api/github.com?device=mobile)
 
 ## e2e
 
