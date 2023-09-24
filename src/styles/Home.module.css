@@ -39,11 +39,28 @@
   font-family: var(--font-mono);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+.samples {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(3, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  padding-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.samples .card {
+  width: 250px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25%, auto));
+  width: var(--max-width);
+  max-width: 100%;
+  grid-gap: 3rem;
 }
 
 .card {

@@ -49,21 +49,42 @@ export default function Home() {
             />
           </div>
         </div>
-
-        <div className={styles.grid}>
+        <div className={styles.samples}>
           <a
-            href="https://webshot-sigma.vercel.app/api/github.fr?device=mobile"
+            href="/api/webshot?url=https://github.fr"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Try <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Try Webshot with Vercel already deployed instance.
-            </p>
+            <p className={inter.className}>Get desktop screenshot</p>
           </a>
+          <a
+            href="/api/webshot?url=https://github.fr&device=mobile"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className={inter.className}>Get mobile screenshot</p>
+          </a>
+          <a
+            href="/api/webshot?url=https://github.fr&selectorId=productivity"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className={inter.className}>Get selector Id screenshot</p>
+          </a>
+          <a
+            href="/api/webshot?url=https://github.fr&fullpage"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className={inter.className}>Get fullpage screenshot</p>
+          </a>
+        </div>
+
+        <div className={styles.grid}>
           <a
             href="https://github.com/elzinko/webshot"
             className={styles.card}
@@ -86,7 +107,9 @@ export default function Home() {
             <h2 className={inter.className}>
               Build <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>npm install && npm run start</p>
+            <p className={inter.className}>
+              <code>npm install && npm run start</code>
+            </p>
           </a>
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

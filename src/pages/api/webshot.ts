@@ -65,7 +65,7 @@ export default async function handler(
   if (!isValidUrl(url)) {
     return res.status(400).json({ message: `The url provided is not valid` })
   }
-
+  const fullpage = searchParams.has('fullpage');
   const device = searchParams.get('device')
   const type = searchParams.get('type') || 'png'
   const selectorId = searchParams.get('selectorId')
@@ -100,9 +100,9 @@ export default async function handler(
       }
       const { x, y, width, height } = box
       await page.hover(selector);
-      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined, clip: { x, y, width, height } })
+      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined, clip: { x, y, width, height }, fullPage: fullpage })
     } else {
-      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined })
+      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined, fullPage: fullpage })
     }
     await browser.close();
 
