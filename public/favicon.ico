@@ -1,0 +1,9 @@
+<svg width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+ <title>webshot</title>
+ <g id="webshot">
+  <title>Layer 1</title>
+  <path stroke-width="2" stroke="#5f00bf" id="svg_3" d="m17,32c-8.28729,0 -15,-6.71271 -15,-15c0,-8.28729 6.71271,-15 15,-15c8.28729,0 15,6.71271 15,15c0,8.28729 -6.71271,15 -15,15z"/>
+  <line stroke-width="2" id="svg_6" y2="17" x2="31.68086" y1="17" x1="1.89362" stroke="#5f00bf" fill="none"/>
+  <line transform="rotate(90 17.2128 17)" stroke-width="2" id="svg_7" y2="17" x2="32.10639" y1="17" x1="2.31915" stroke="#5f00bf" fill="none"/>
+ </g>
+</svg>

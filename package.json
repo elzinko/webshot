@@ -1,30 +1,28 @@
 {
-  "name": "webshot",
-  "description": "A simple web screenshot App.",
+  "name": "browserless-nextjs",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
-  "author": "Thomas Couderc <thomas.couderc@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "e2e:run": "cypress run --env host=localhost:3002",
+    "e2e:run:vercel": "cypress run --env host=webshot-sigma.vercel.app,port=80"
+  },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "puppeteer": "^21.2.1",
-    "puppeteer-core": "^21.2.1"
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "puppeteer-core": "^19.7.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2"
   },
   "devDependencies": {
-    "cypress": "^13.2.0",
-    "nodemon": "^3.0.1",
-    "prettier": "^2.3.2"
-  },
-  "scripts": {
-    "clean": "rm -rf node_modules && npm install",
-    "start": "node index",
-    "dev": "nodemon",
-    "build": "echo \"no build needed\"",
-    "cypress:open": "cypress open",
-    "e2e:run": "cypress run --env host=localhost:3000",
-    "e2e:run:vercel": "cypress run --env host=webshot-sigma.vercel.app,port=80",
-    "format": "prettier --write \"**/*.js\"",
-    "vercel-build": "echo \"no build needed\""
+    "cypress": "^13.2.0"
   }
 }
