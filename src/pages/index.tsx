@@ -31,22 +31,23 @@ export default function Home() {
                 src="/elzinko.svg"
                 alt="Elzinko"
                 className={styles.webshotLogo}
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 priority
               />
             </a>
           </div>
         </div>
         <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/webshot.svg"
-            alt="Webshot Logo"
-            width={180}
-            height={37}
-            priority
-          />
+          <div className={styles.logo}>
+            <Image
+              src="/webshot.svg"
+              alt="13"
+              width={250}
+              height={100}
+              priority
+            />
+          </div>
         </div>
 
         <div className={styles.grid}>
