@@ -70,7 +70,7 @@ export default async function handler(
   const type = searchParams.get('type') || 'png'
   const selectorId = searchParams.get('selectorId')
   const selector = selectorId ? `#${selectorId}` : null
-  const filename = `${url.replace(/(^\w+:|^)\/\//, '').replace(/\//g, '_')}${selectorId ? `_${selectorId}` : ''}.${device ? `_${device}` : ''}.${type}`
+  const filename = `${url.replace(/(^\w+:|^)\/\//, '').replace(/\//g, '_')}${selectorId ? `_${selectorId}` : ''}${device ? `_${device}` : ''}.${type}`
 
   const viewPort = device === 'mobile' ? mobileViewport : desktopViewport
   const userAgent = device === 'mobile' ? MOBILE_USER_AGENT : DESKTOP_USER_AGENT
