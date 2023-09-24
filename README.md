@@ -34,13 +34,7 @@ docker run -p 3000:3000 webshot
 
 ## :fire: Fire it up
 
-Open [website](http://localhost:3000/) for more information and API samples
-
-- get [github.com desktop screenshot](http://localhost:3000/api/webshot?url=https://github.fr)
-
-- get [github.com mobile screenshot](http://localhost:3000/api/webshot?url=https://github.fr&device=mobile)
-
-- get [github.com screenshot of specific selector Id](http://localhost:3000/api/webshot?url=https://github.fr&selectorId=productivity)
+Open [website](http://localhost:3000/) for more information.
 
 ## e2e
 
