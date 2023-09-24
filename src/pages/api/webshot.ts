@@ -100,10 +100,11 @@ export default async function handler(
       }
       const { x, y, width, height } = box
       await page.hover(selector);
-      file = await page.screenshot({ path: filename, type: type as 'png' | 'jpeg' | 'webp' | undefined, clip: { x, y, width, height } })
+      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined, clip: { x, y, width, height } })
     } else {
-      file = await page.screenshot({ path: filename, type: type as 'png' | 'jpeg' | 'webp' | undefined })
+      file = await page.screenshot({ type: type as 'png' | 'jpeg' | 'webp' | undefined })
     }
+    await browser.close();
 
     res.setHeader('Content-Disposition', `filename="${filename}"`)
     res.setHeader('Content-Type', 'image/png')
