@@ -1,6 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import puppeteer from 'puppeteer-core'
 
+export const maxDuration = 300;
+
 
 function isValidUrl(url: string) {
   try {
